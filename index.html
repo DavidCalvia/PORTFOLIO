@@ -32,9 +32,9 @@
 
     <main id="inicio" class="cabeçalho">
 
-            <img src="img/Foto Perfil.jfif" alt="Foto de David Calvia" class="foto-perfil">
-            <h1>David Calvia</h1>
-            <p class="cabeçalho-sub-titulo">Desenvolvedor Front-End</p>
+        <img src="img/Foto Perfil.jfif" alt="Foto de David Calvia" class="foto-perfil">
+        <h1>David Calvia</h1>
+        <p class="cabeçalho-sub-titulo">Desenvolvedor Front-End</p>
 
     </main>
 
@@ -62,42 +62,54 @@
 
             <div class="projetos-card">
                 <img src="img/projeto1.png" alt="Projeto 1" class="projetos-imagem">
-                <h3 class="info-projetos">PortFólio</h3>
-                <p class="paragrafo-projetos">Portfólio criado para apresentação pessoal, profissional e projetos</p>
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">PortFólio</h3>
+                    <p class="paragrafo-projetos">Portfólio criado para apresentação pessoal, profissional e projetos
+                    </p>
+                </div>
             </div>
 
             <div class="projetos-card">
                 <img src="img/projeto2.png" alt="Projeto 2" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
                 <h3 class="info-projetos">Ryan Gracie Vila - Gilda</h3>
                 <p class="paragrafo-projetos">Site criado para a academia de lutas Ryan Gracie Vila Gilda - Santo André
                 </p>
             </div>
+        </div>
 
-            <div class="projetos-card">
-                <img src="img/projeto3.png" alt="Projeto 3" class="projetos-imagem">
-                <h3 class="info-projetos">Desenvolvimento</h3>
-                <p class="paragrafo-projetos">Projeto ainda em denvolvimento, quando estiver pronto estara a mostra
-                    neste local</p>
-            </div>
+        <div class="projetos-card">
+            <img src="img/projeto3.png" alt="Projeto 3" class="projetos-imagem">
+            <div class="caixa-textos-projeto">
+            <h3 class="info-projetos">Desenvolvimento</h3>
+            <p class="paragrafo-projetos">Projeto ainda em denvolvimento, quando estiver pronto estara a mostra
+                neste local</p>
+        </div>
+
+        </div>
 
     </section>
 
     <!--Fim dos Projetos - Projeto-->
 
     <section id="contatos" class="contatos">
-        <h2 class="contatos-titulo">Contatos</h2>
+        <h2 class="contatos-titulo">Entre em Contato</h2>
         <form class="formulario-contato" id="formulario">
-            <div class="nome-form">
+            <div class="grupo-form">
                 <input placeholder="Nome" class="campo-form">
             </div>
+            
             <div class="grupo-form">
-                <textarea placeholder="Digite sua Mensagem"></textarea>
+                <textarea class="campo-form" placeholder="Digite sua Mensagem"></textarea>
             </div>
+
+            <button type="submit" class="botao-form">Enviar Whatzap</button>
+
         </form>
 
     </section>
 
-      <!--Fim dos Contatos - Contatos-->
+    <!--Fim dos Contatos - Contatos-->
 
 
 
