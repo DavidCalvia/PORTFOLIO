@@ -98,13 +98,13 @@
 
     <section id="contatos" class="contatos">
         <h2 class="contatos-titulo">Entre em Contato</h2>
-        <form class="formulario-contato" id="formulario">
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
             <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
             </div>
             
             <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua Mensagem"></textarea>
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="4 " id="mensagem"></textarea>
             </div>
 
             <button type="submit" class="botao-form">Enviar Whatzap</button>
@@ -115,6 +115,29 @@
 
     <!--Fim dos Contatos - Contatos-->
 
+<script>
+
+function enviarWhats(event) {
+    event.preventDefaut
+
+const nome =  document.getElementById ('nome').value;
+    const mensagem = document.getElementById ('mensagem').value;
+    const telefone = ''
+
+    const texto = `Olá me chamo ${nome}, ${mensagem}`
+    const msgFormatada = encodeURIComponent (texto);
+    const url = `https://whatsa.me/5511949578661/?t=${telefone} ${msgFormatada}`
+
+    console.log (url)
+
+    window.open(url, '_blank')
+
+}
+
+
+    
+
+    </script>
 
 
 
