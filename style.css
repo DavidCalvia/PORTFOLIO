@@ -69,6 +69,7 @@ body {
 }
 
 .cabeçalho {
+    
     min-width: 100vh;
     display: flex;
     justify-content: center;
@@ -79,11 +80,13 @@ body {
 
 .foto-perfil {
 
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
     border-radius: 50%;
     border: 4px solid var(--vidro);
+    animation: flutuar 5s ease-in-out infinite;
+
 
 }
 
@@ -218,6 +221,7 @@ h1 {
 
 .contatos-titulo {}
 
+
 .formulario-contato {
 max-width: 600px;
 margin: auto;
@@ -267,4 +271,28 @@ box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
 
     transform: translateY(-4px);
     box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+}
+
+.particulas {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background:
+    radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
+    var(--maisEscuro);
+}
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }
