@@ -16,3 +16,8 @@ Primeiro Commit de Teste# PORTFOLIO
 
 31-08-25
 
+-19:00 - Fim do código HTML
+
+01-09-25
+
+-20:20 - Relizado ajustes de espaçamento na pagina

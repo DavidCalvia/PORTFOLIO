@@ -108,7 +108,7 @@ h1 {
 }
 
 .sobre {
-
+    scroll-margin-top: 80px;
     padding: 6rm 2rem;
 }
 
